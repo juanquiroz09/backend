@@ -4,17 +4,22 @@
 use('portafolio');
 
 // Create a new collection.
-db.createCollection('projects');
+//db.createCollection('projects');
 
 //ELIMINAR DATOS DE COLECCION
-//db.collection.drop();
+//db.projects.drop();
 
 // The prototype form to create a collection:
 db.projects.insertOne(
   {
-    name: "juan"
+    name: "bloc",
+    description: "bloc personal",
+    category: "informatica",
+    langs: ['PHP', 'MySQL','CSS'],
+    year: 2013
   }
 );
+
 
 //db.collection.find({});
 
