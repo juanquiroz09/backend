@@ -1,0 +1,23 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+// Create a new database.
+use('portafolio');
+
+// Create a new collection.
+db.createCollection('projects');
+
+//ELIMINAR DATOS DE COLECCION
+//db.collection.drop();
+
+// The prototype form to create a collection:
+db.projects.insertOne(
+  {
+    name: "juan"
+  }
+);
+
+//db.collection.find({});
+
+
+// More information on the `createCollection` command can be found at:
+// https://www.mongodb.com/docs/manual/reference/method/db.createCollection/
