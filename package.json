@@ -1,21 +1,21 @@
 {
   "name": "api-rest-nodejs",
   "version": "1.0.0",
-  "description": "api-rest-master-javascript",
+  "description": "Api Rest del master de Javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "author": "juan_quiroz",
-  "license": "ISC",
+  "author": "Juan Quiroz",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.20.1",
-    "connect-multiparty": "^2.2.0",
-    "express": "^4.18.2",
-    "mongoose": "^6.7.0"
+    "body-parser": "^1.18.2",
+    "connect-multiparty": "^2.1.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.14"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^1.17.3"
   }
 }
