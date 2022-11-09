@@ -26,5 +26,5 @@ app.use('/api', project_routes);
 
 
 // exportar
-module.exports = app;
+export { app };
 
