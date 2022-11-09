@@ -2,6 +2,7 @@
   "name": "api-rest-nodejs",
   "version": "1.0.0",
   "description": "Api Rest del master de Javascript",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,10 +13,11 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "connect-multiparty": "^2.1.0",
+    "dotenv": "^16.0.3",
     "express": "^4.16.3",
     "mongoose": "^5.0.14"
   },
   "devDependencies": {
-    "nodemon": "^1.17.3"
+    "nodemon": "^2.0.20"
   }
 }

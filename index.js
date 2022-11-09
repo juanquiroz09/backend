@@ -1,17 +1,18 @@
 'use strict'
+import { MONGODB_URI } from './config';
+import { PORT } from './config';
 
 var mongoose = require('mongoose');
 var app = require('./app');
-var port = 3700;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/portafolio')
+mongoose.connect(MONGODB_URI)
         .then(() => {
         	console.log("Conexión a la base de datos establecida satisfactoriamente...");
 
         	// Creacion del servidor
-        	app.listen(port, () => {
-        		console.log("Servidor corriendo correctamente en la url: localhost:3700");
+        	app.listen(PORT, () => {
+        		console.log("Servidor corriendo correctamente en la url: localhost:", PORT);
         	});
 
         })
