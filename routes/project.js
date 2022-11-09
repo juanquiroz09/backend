@@ -1,11 +1,11 @@
 'use strict'
 
-var express = require('express');
-var ProjectController = require('../controllers/project');
+import express from 'express';
+import ProjectController from '../controllers/project.js';
 
 var router = express.Router();
 
-var multipart = require('connect-multiparty');
+import  multipart from 'connect-multiparty';
 var multipartMiddleware = multipart({ uploadDir: './uploads' });
 
 router.get('/home', ProjectController.home);
@@ -18,4 +18,4 @@ router.delete('/project/:id', ProjectController.deleteProject);
 router.post('/upload-image/:id', multipartMiddleware, ProjectController.uploadImage);
 router.get('/get-image/:image', ProjectController.getImageFile);
 
-module.exports = router;
+export default router;

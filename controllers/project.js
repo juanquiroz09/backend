@@ -1,8 +1,8 @@
 'use strict'
 
-var Project = require('../models/project');
-var fs = require('fs');
-var path = require('path');
+import Project from '../models/project.js';
+import fs from 'fs';
+import path from 'path';
 
 var controller = {
 	
@@ -153,4 +153,4 @@ var controller = {
 
 };
 
-module.exports = controller;
+export default controller;

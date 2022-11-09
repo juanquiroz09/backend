@@ -1,12 +1,11 @@
 'use strict'
+import express from "express";
+import bodyParser from 'body-parser';
+import project_routes from './routes/project.js'
 
-var express = require('express');
-var bodyParser = require('body-parser');
-
-var app = express();
+const app = express();
 
 // cargar archivos rutas
-var project_routes = require('./routes/project');
 
 // middlewares
 app.use(bodyParser.urlencoded({extended:false}));
@@ -26,5 +25,5 @@ app.use('/api', project_routes);
 
 
 // exportar
-export { app };
+export default app;
 
