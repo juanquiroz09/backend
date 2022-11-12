@@ -3,13 +3,14 @@ import express from "express";
 import bodyParser from 'body-parser';
 import project_routes from './routes/project.js'
 
+//Inicialización
 const app = express();
 
 // cargar archivos rutas
 
 // middlewares
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
 // Configurar cabeceras y cors
 app.use((req, res, next) => {
