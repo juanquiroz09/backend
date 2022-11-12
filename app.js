@@ -1,6 +1,5 @@
 'use strict'
 import express from "express";
-import bodyParser from 'body-parser';
 import project_routes from './routes/project.js'
 
 //Inicialización
