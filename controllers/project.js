@@ -56,20 +56,6 @@ var controller = {
 		});
 	},
 
-	detailProject:function(req,res){
-		var id=req.params.id;
-		//find({_id: ObjectId("5f7ba4d92f1bbd5a38ed2544")}) //forma correcta de consultar en mongodb
-		Project.find({_id: id}).exec((err,project)=>{
-				if(err){
-						return res.status(500).send({message: "Error al consultar"});
-				}else if(!project){
-						return res.status(404).send({message: "Proyecto no encontrado"});
-				}else{
-						return res.status(200).send({id});
-				}
-		});
-	},
-
 	getProjects: function(req, res){
 
 		Project.find({}).sort('-year').exec((err, projects) => {
